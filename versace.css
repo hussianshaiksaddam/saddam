@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+  .searchbar
+  {
+     margin-top: 15px;
+     float: right;
+     right: 0;
+     border-radius: px;
+     margin-right: 10px;
+  }
+  
+  .searchbar input,i
+  {
+     height: 30px;
+     border-radius: 13px;
+     color: rgb(0, 0, 0);
+  }
+  
+  
+  .searchbar button
+  {
+     background-color: rgb(255, 255, 255);
+     border-radius: 13px;
+     margin-right: 30px;
+     border-color: rgb(255, 255, 255);
+     border-style: none;
+     height: 30px;
+     color: rgb(0, 0, 0);
+  }
+  
+  .searchbar button:hover
+  {
+    background-color: #000000;
+    color: white;
+    border-color: #949090;
+  }
+  
+  
+     .heading
+     {  
+       color: brown;
+       margin: auto;
+       height: 80px;
+       width: 70%;
+       text-align: center;
+       padding: 5px;
+     }
+  
+     .heading h1
+     {
+       margin-top: 35px;
+       font-family: Courier New, monospace;
+       font-size: 40px;
+     }
+  
+     .navbar
+     {
+       background-color: rgb(255, 255, 255);
+       height: 100px;
+       width: 100%;
+     }
+  
+     .navbar ul
+     {
+       display: flex;
+       justify-content: space-around;
+     }
+  
+     .navbar li
+     {
+       padding: 10px;
+       list-style-type: none;
+       margin-top: 22px;
+       font-size: 19px;
+       font-family: Courier New, monospace;
+     }
+  
+     .navbar li:hover
+     {
+       /* background-color: black;
+       border-radius: 7px; */
+       border-style:groove;
+     }
+  
+  
+     .navbar a
+     {
+       text-decoration: none;
+       color: black;
+       
+     }
+
+     .border
+   {
+     height: 2px;
+     width: 80%;
+     background-color: black;
+     margin: auto;
+   }
+
+
+
+
+
+  .header 
+  {
+    height: 90px;
+    color: brown;
+     margin: auto;
+     width: 70%;
+     text-align: center;
+     padding: 5px;
+  }
+
+  .header h1
+  {
+    margin-top: 10px;
+     font-family: Courier New, monospace;
+     font-size: 40px;
+  }
+  
+  .flexbox {
+    display: flex;
+  }
+  
+  .left-panel {
+    position: sticky; /* Set the element to become sticky  */
+    height: 90vh;
+    width: 50%;
+    top: 0; /* Set the sticky positon top */
+  }
+
+  .left-panel img
+  {
+    height: 577px;
+    width: 100%;
+  }
+  
+  .right-panel {
+    height: 200rem;
+    width: 50%;
+    background-image: url(https://w0.peakpx.com/wallpaper/869/841/HD-wallpaper-gold-versace-medusa3-gold-medusa-versace-thumbnail.jpg);
+    opacity: 0.8;
+  }
+
+  .right-panel h1,h2,p
+  {
+    text-align: center;
+    color: white;
+    opacity: 2;
+  }
+
+  .right-panel h1
+  {
+    text-decoration:underline;
+  }
+
+  .right-panel a
+  {
+    text-decoration: none;
+  }
+  
+  
+  .footer
+{
+   background-color: #000000;
+   height: 300px;
+   width: 90%;
+   margin: auto;
+   background-image: url(https://i.etsystatic.com/25690225/r/il/1b55bd/3140641207/il_372x296.3140641207_ehz1.jpg);
+   opacity: 0.4;
+
+}
+
+.container_l
+{
+   height: 250px;
+   width: 50%;
+   margin: auto;
+   float: left;
+   margin-top: 25px;
+   color: #000000;
+}
+
+.container_l h3,h4
+{
+   text-align: center;
+   padding: 5px;
+   opacity: 2;
+}
+
+.container_l a
+{
+   text-decoration: none;
+}
+
+.container_r
+{
+   height: 250px;
+   width: 50%;
+   margin: auto;
+   float: right;
+   margin-top: 25px;
+   color: #000000;
+}
+
+.container_r h3,i
+{
+   text-align: center;
+   padding: 5px;
+}
