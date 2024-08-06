@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>THE THREAD STORE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .searchbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            background-color: #f8f8f8;
+        }
+
+        .searchbar form {
+            display: flex;
+            align-items: center;
+        }
+
+        .searchbar input {
+            height: 30px;
+            border-radius: 13px;
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            color: #000;
+            margin-right: 10px;
+        }
+
+        .searchbar button {
+            background-color: #fff;
+            border-radius: 13px;
+            border: none;
+            height: 30px;
+            color: #000;
+            padding: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .searchbar button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .heading h1 {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            color: brown;
+        }
+
+        .navbar {
+            background-color: #fff;
+            border-bottom: 2px solid #000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .navbar li {
+            padding: 10px;
+            font-size: 19px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar li:hover {
+            text-decoration: underline;
+            text-decoration-color: brown;
+            text-decoration-thickness: 3px;
+            transform: scale(1.1);
+        }
+
+        .border {
+            height: 2px;
+            background-color: #000;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .dis {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dis h2 {
+            color: brown;
+            font-family: 'Courier New', monospace;
+        }
+
+        .cover_img, .cover_img2 {
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+
+        .cover_img img, .cover_img2 img {
+            height: auto;
+            width: 100%;
+            max-height: 400px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product div {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            text-align: center;
+            color: brown;
+        }
+
+        .login {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .main h1 {
+            color: brown;
+            font-style: italic;
+        }
+
+        .main label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .main input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .main button {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            background-color: brown;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-image: url('https://i.etsystatic.com/25690225/r/il/1b55bd/3140641207/il_372x296.3140641207_ehz1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container_l, .container_r {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container_l h3, .container_r h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container_l a, .container_r a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .container_r i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .navbar li {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .product div {
+                flex-basis: calc(50% - 20px);
+            }
+
+            .cover_img img, .cover_img2 img {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .searchbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .searchbar input {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .searchbar button {
+                margin-right: 0;
+            }
+
+            .product div {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="searchbar">
+        <form>
+            <a href="#"><button>SIGN-UP</button></a>
+            <input type="text" placeholder="SEARCH..." name="search">
+            <i class="fa fa-search"></i>
+        </form>
+    </div>
+
+    <div class="heading">
+        <h1>THE THREAD STORE</h1>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
+        </ul>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="dis">
+        <h2>WELCOME TO <i style="color: brown;">"THE THREAD STORE"</i></h2>
+        <p>
+            BECOME A MEMBER TO UNLOCK REWARDS & GET EXCLUSIVE ACCESS.
+            ALREADY HAVE AN ACCOUNT? SIGN IN TO EARN POINTS FOR DISCOUNTS AND OTHER <i style="color: brown;">"THE THREAD STORE"</i> MEMBER BENEFITS.
+        </p>
+        <h4>ONE PLACE FOR YOUR EVERYTHING</h4>
+    </div>
+
+    <div class="cover_img">
+        <img src="https://wallpapercave.com/wp/wp5843375.jpg" alt="Cover Image 1">
+        <img src="https://wallpapercave.com/wp/wp13934867.jpg" alt="Cover Image 2">
+    </div>
+
+    <div class="cover_img2">
+        <img src="https://wallpapercave.com/wp/wp2200405.jpg" alt="Cover Image 3">
+        <img src="https://wallpapercave.com/wp/wp8956065.jpg" alt="Cover Image 4">
+    </div>
+
+    <h2 style="text-align: center;">HOTTEST 9 BRANDS</h2>
+
+    <div class="product">
+        <div>
+            <a href="lv.html"><img src="https://wallpapercave.com/wp/wp3267062.jpg" alt="LOUIS VUITTON"></a>
+            <h3>LOUIS VUITTON</h3>
+        </div>
+        <div>
+            <a href="chanel.html"><img src="https://wallpapercave.com/wp/wp3267062.jpg" alt="chanel"></a>
+            <h3>CHANEL</h3>
+        </div>
+        <div>
+            <a href="chanel.html"><img src="https://wallpapercave.com/wp/wp3267062.jpg" alt="chanel"></a>
+            <h3>CHANEL</h3>
+        </div>
+    </div>
