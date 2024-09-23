@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    background-color: black;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.name
+{
+    margin-left: 20px;
+    font-family: Impact, fantasy;
+    
+}
+
+.name h1
+{
+
+    font-size: 50px;
+    background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+      
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    padding:  2px;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar nav ul a:hover
+{
+    background: -webkit-linear-gradient(319deg,rgb(98, 201, 124) 0%, rgb(169, 166, 201) 37%, #f2cd54 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.intro_container
+{
+    height: 400px;
+    width: 90%;
+    /* background: -webkit-linear-gradient(rgb(48, 166, 196), rgb(212, 4, 4)); */
+    background-color: #91d370;
+    background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.intro
+{
+    text-align: center;
+    padding: 30px;
+    font-size: 60px;
+    
+}
+
+.intro_para
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+.scroll
+{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.edu_info
+{
+    margin: auto;
+    height: 500px;
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+}
+
+.edu_head
+{
+    text-align: center;
+    padding: 30px;
+    color:aliceblue;
+}
+
+.school
+{
+    color: aliceblue;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.underline
+{
+    color: aliceblue;
+}
+
+.inter 
+{
+    color: aliceblue;
+    text-align: center;
+}
+
+.inter p
+{
+    margin-left: 80PX;
+}
+
+.btech
+{
+    color: aliceblue;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.skill_heading
+{
+    color: aliceblue;
+    text-align: center;
+}
+
+.skill_container
+{
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   height: 200px;
+   width: 100%;
+}
+
+.skill_container img
+{
+    /* margin: auto; */
+    height: 100px;
+    width: 85px;
+    padding: 20px;
+    float: left;
+    margin-right: 40px;
+}

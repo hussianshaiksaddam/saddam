@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    /* color: aliceblue; */
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    padding:  2px;
+    font-size: 18px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar nav ul a:hover
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 174, 0);
+    border-radius: 6px;
+}
+
+
+/* .section {
+    text-align: center;
+    color: rgb(223, 233, 241);
+    background: linear-gradient(to top, #e0d1bb 0%, #fa9805 100%);
+}
+
+.section img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 60px
+    ;
+} */
+
+.section
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top, #e0d1bb 0%, #f59607 100%);
+}
+
+.section img
+{
+    height: 200px;
+    width: 400px;
+    align-self: baseline;
+    margin: 0 auto;
+}
+
+
+.whats_on_your_mind {
+    text-align: center;
+    color: #e0d1bb;
+}
+
+.whats_on_your_mind h2 {
+    font-size: 26px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-item img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  
+    transition: all 0.3s ease-in-out;
+}
+
+
+#images
+{
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: #c01414; */
+}
+.menu-item img:hover
+{
+    scale: 1.2;
+}
+.menu-item h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.near_you {
+    text-align: center;
+}
+
+.near_you h2 {
+    font-size: 26px;
+}
+
+.filters {
+    text-align: center;
+}
+
+.filters .btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters .btn .fa {
+    margin-right: 10px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotels {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotels img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .text {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.main-content .text h3 {
+    font-size: 22px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content a img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px 0;
+}

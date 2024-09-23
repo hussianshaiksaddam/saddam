@@ -1,0 +1,123 @@
+*
+{
+    margin: 0;
+}
+
+.container1
+{
+    background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+    height: 750px;
+    width: 100%;
+    
+}
+
+
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name
+{
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: Impact, fantasy;
+    
+}
+
+.name h1
+{
+
+    font-size: 50px;
+    background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    padding:  2px;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar nav ul a:hover
+{
+    background: -webkit-linear-gradient(319deg,rgb(98, 201, 124) 0%, rgb(169, 166, 201) 37%, #f2cd54 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.container2
+{
+    background-color:rgb(35, 159, 197);
+    height: 700px;
+    width: 100%;
+}
+
+.container3
+{
+    height: 650px;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+}
+
+.skills
+{
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+}
+
+.skills h3 
+{
+    text-align: left;    
+}
+
+.skills p
+{
+    text-align: left;    
+}
+
+
+.skills_background:hover
+{
+    background-color: #bca0ff;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* .skills h3:hover
+{
+    background-color: #f2cd54;
+} */
+
+.container4
+{
+    background-color: rgb(231, 140, 183);
+    height: 650px;
+}
+
+.container4 img
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
